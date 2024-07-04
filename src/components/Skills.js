@@ -12,19 +12,53 @@ import Form from "react-bootstrap/Form";
 import Navbar from "react-bootstrap/Navbar";
 import FormControl from "react-bootstrap/FormControl";
 import Accordion from "react-bootstrap/Accordion";
-import ExampleCarouselImage from './ExampleCarouselImage.png';
-
-
+import ExampleCarouselImage from "./ExampleCarouselImage.png";
 
 function Skills() {
   return (
     <div className="Skills">
-      
       <Container className="px-4 py-5" id="featured-3">
-        <h2 className="pb-2 border-bottom" style={{ textAlign: "left" }}>
-          Discover Our Featured Courses
+        <Carousel>
+          <Carousel.Item>
+            <img
+              src="https://res.cloudinary.com/dalwd5c23/image/upload/v1705177932/samples/cup-on-a-table.jpg"
+              alt="First slide"
+              style={{
+                width: "100%",
+                height: "500px",
+                objectFit: "cover",
+              }}
+            />
+
+            <Carousel.Caption style={{ color: "black" }}>
+              <h3>Welcome to Our E-Learning Platform</h3>
+              <p>Explore a world of knowledge and opportunities.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img
+              src="https://res.cloudinary.com/dalwd5c23/image/upload/v1705177932/samples/cup-on-a-table.jpg"
+              alt="First slide"
+              style={{
+                width: "100%",
+                height: "500px",
+                objectFit: "cover",
+              }}
+            />
+
+            <Carousel.Caption style={{ color: "black" }}>
+              <h3>Welcome to Our E-Learning Platform</h3>
+              <p>Explore a world of knowledge and opportunities.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </Container>
+      <Container className="px-4 py-5" id="featured-3">
+        <h2 className="pb-2 border-bottom" style={{ textAlign: "center", fontFamily:"cursive" }}>
+          Projects
         </h2>
-        <Row className="g-4 py-5 row-cols-1 row-cols-lg-3">
+        <Row className="g-4 py-5 row-cols-1 row-cols-lg-2">
           <Col>
             <Card className="feature d-flex flex-column h-100">
               <div className="feature-icon bg-primary bg-gradient">
@@ -39,10 +73,46 @@ function Skills() {
                 </svg>
               </div>
               <Card.Body className="flex-grow-1">
-                <Card.Title>
+                <Card.Title  style={{borderBottom:"solid 3px",padding:"2px"}}>
+                  Book Store 
+                </Card.Title>
+                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
+                Developed a dynamic Book Store website using jQuery, CSS, HTML, and JavaScript. Users can browse, search, and purchase books seamlessly. Enhanced user experience with interactive features and a clean, responsive design.
+                </Card.Text>
+                <a href="https://k-book.netlify.app/" target="_blank" className="icon-link">
+                  Demo
+                  <svg
+                    className="bi"
+                    width="1em"
+                    height="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                  >
+                    <use xlinkHref="#chevron-right" />
+                  </svg>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card className="feature d-flex flex-column h-100">
+              <div className="feature-icon bg-primary bg-gradient">
+                <svg
+                  className="bi"
+                  width="1em"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <use xlinkHref="#collection" />
+                </svg>
+              </div>
+              <Card.Body className="flex-grow-1">
+                <Card.Title  style={{borderBottom:"solid 3px",padding:"2px"}}>
                   Elevate Your Skills in Digital Marketing
                 </Card.Title>
-                <Card.Text>
+                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
                   Embark on a transformative journey in Marketing and Business
                   with our dynamic courses designed to enhance your digital
                   marketing skills and strategic thinking.
@@ -73,18 +143,20 @@ function Skills() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                 >
-                  <use xlinkHref="#people-circle" />
+                  <use xlinkHref="#collection" />
                 </svg>
               </div>
               <Card.Body className="flex-grow-1">
-                <Card.Title>Master Personal Finance and Economics</Card.Title>
-                <Card.Text>
-                  Take control of your financial future with our engaging
-                  courses in Personal Finance and Economics, providing essential
-                  knowledge for financial independence.
+                <Card.Title style={{borderBottom:"solid 3px",padding:"2px"}}>
+                  Elevate Your Skills in Digital Marketing
+                </Card.Title>
+                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
+                  Embark on a transformative journey in Marketing and Business
+                  with our dynamic courses designed to enhance your digital
+                  marketing skills and strategic thinking.
                 </Card.Text>
                 <a href="#" className="icon-link">
-                  Discover Courses
+                  Explore Courses
                   <svg
                     className="bi"
                     width="1em"
@@ -99,7 +171,7 @@ function Skills() {
             </Card>
           </Col>
 
-          <Col>
+           <Col>
             <Card className="feature d-flex flex-column h-100">
               <div className="feature-icon bg-primary bg-gradient">
                 <svg
@@ -109,20 +181,20 @@ function Skills() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                 >
-                  <use xlinkHref="#toggles2" />
+                  <use xlinkHref="#collection" />
                 </svg>
               </div>
               <Card.Body className="flex-grow-1">
-                <Card.Title>
-                  Unleash Your Creativity with Arts and Photography
+                <Card.Title  style={{borderBottom:"solid 3px",padding:"2px"}} >
+                  Elevate Your Skills in Digital Marketing
                 </Card.Title>
-                <Card.Text>
-                  Dive into a world of creativity with our Arts and Photography
-                  courses, where every brushstroke, click of the camera, or
-                  digital creation becomes a unique masterpiece.
+                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
+                  Embark on a transformative journey in Marketing and Business
+                  with our dynamic courses designed to enhance your digital
+                  marketing skills and strategic thinking.
                 </Card.Text>
                 <a href="#" className="icon-link">
-                  Start Learning
+                  Explore Courses
                   <svg
                     className="bi"
                     width="1em"
@@ -136,11 +208,13 @@ function Skills() {
               </Card.Body>
             </Card>
           </Col>
+
+  
         </Row>
       </Container>
 
-      <Container className="px-4 py-5" style={{ textAlign: "left" }}>
-        <h2 className="pb-2 border-bottom">Unleash Your Learning Experience</h2>
+      <Container className="px-4 py-5 border-bottom" style={{ textAlign: "left" }}>
+        <h2 className="pb-2 border-bottom">Educatuin</h2>
 
         <Row className="row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
           <Col className="d-flex flex-column align-items-start gap-2">
@@ -248,75 +322,34 @@ function Skills() {
         </Row>
       </Container>
 
-      <Container className="px-4 py-5" id="featured-3">
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Accordion Item #1</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-      </Container>
+      <Container className="px-4 py-5 border-bottom" id="featured-3">
 
-      <Container className="px-4 py-5" id="featured-3">
-      <Carousel>
-      <Carousel.Item>
-            <img
-              src="https://res.cloudinary.com/dalwd5c23/image/upload/v1705177932/samples/cup-on-a-table.jpg"
-              alt="First slide"
-              style={{
-                width: "100%",
-                height: "500px",
-                objectFit: "cover",
-                
-              }}
-            />
-
-            <Carousel.Caption style={{color:"black"}}>
-              <h3>Welcome to Our E-Learning Platform</h3>
-              <p>Explore a world of knowledge and opportunities.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <img
-              src="https://res.cloudinary.com/dalwd5c23/image/upload/v1705177932/samples/cup-on-a-table.jpg"
-              alt="First slide"
-              style={{
-                width: "100%",
-                height: "500px",
-                objectFit: "cover",
-                
-              }}
-            />
-
-            <Carousel.Caption style={{color:"black"}}>
-              <h3>Welcome to Our E-Learning Platform</h3>
-              <p>Explore a world of knowledge and opportunities.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-
-    </Carousel>
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Accordion Item #1</Accordion.Header>
+            <Accordion.Body>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Accordion Item #2</Accordion.Header>
+            <Accordion.Body>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
       </Container>
     </div>
   );
