@@ -4,7 +4,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 
 const Banner = () => {
@@ -13,32 +12,24 @@ const Banner = () => {
       <h2
         className="pb-2 border-bottom"
         style={{ textAlign: "center", fontFamily: "cursive" }}
-      ></h2>
+      >
+        {/* Add any heading text here */}
+      </h2>
       <Row className="g-4 py-5 row-cols-1 row-cols-lg-2">
-        <Col lg={4}>
-          <Card className="feature d-flex flex-column h-100">
-            <div className="feature-icon bg-primary bg-gradient">
-              <svg
-                className="bi"
-                width="1em"
-                height="1em"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-              >
-                <use xlinkHref="#collection" />
-              </svg>
-            </div>
-            <Card.Body className="flex-grow-1">
-              <Card.Title style={{ borderBottom: "solid 3px", padding: "2px" }}>
-                HI, I AM Mohammad Kreishan
-              </Card.Title>
-              <Card.Text
+        <Col lg={4} className="d-flex align-items-end">
+          <Card className="feature d-flex flex-column h-100 justify-content-end">
+            <Card.Body className="d-flex flex-column align-items-center">
+              <Card.Title
                 style={{
-                  textAlign: "justify",
-                  textJustify: "inter-word",
-                  padding: "2px",
+                  borderBottom: "solid 3px",
+                  padding: "20px",
+                  marginTop:"200px",
+                  textAlign: "center",
                 }}
               >
+                HI, I AM Mohammad Kreishan
+              </Card.Title>
+              <Card.Text style={{ textAlign: "center" }}>
                 A Full-Stack Developer & Design Enthusiast
               </Card.Text>
               <a
@@ -72,11 +63,10 @@ const Banner = () => {
                   height: "500px",
                   objectFit: "cover",
                 }}
-              />{" "}
+              />
             </div>
           </Card>
         </Col>
-
       </Row>
     </Container>
   );
