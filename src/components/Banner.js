@@ -5,10 +5,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
 
 const Banner = () => {
   return (
-    <Container className="px-5 py-5" id="featured-3">
+    <Container className="px-5 py-5" id="featured-3" style={{backgroundColor:"red"}}>
       <h2
         className="pb-2 border-bottom"
         style={{ textAlign: "center", fontFamily: "cursive" }}
@@ -19,11 +20,20 @@ const Banner = () => {
         <Col lg={4} className="d-flex align-items-end">
           <Card className="feature d-flex flex-column h-100 justify-content-end">
             <Card.Body className="d-flex flex-column align-items-center">
+              <Image
+                src="https://res.cloudinary.com/dalwd5c23/image/upload/v1705177932/samples/cup-on-a-table.jpg"
+                roundedCircle
+                style={{
+                  height:"60%",
+                  width:"70%"
+                }}
+              />
+
               <Card.Title
                 style={{
                   borderBottom: "solid 3px",
                   padding: "20px",
-                  marginTop:"200px",
+                  marginTop: "20px",
                   textAlign: "center",
                 }}
               >

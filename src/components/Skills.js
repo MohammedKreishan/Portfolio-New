@@ -54,167 +54,14 @@ function Skills() {
           </Carousel.Item>
         </Carousel>
       </Container>
-      
-      <Container className="px-4 py-5" id="featured-3">
-        <h2 className="pb-2 border-bottom" style={{ textAlign: "center", fontFamily:"cursive" }}>
-          Projects
-        </h2>
-        <Row className="g-4 py-5 row-cols-1 row-cols-lg-2">
-          <Col>
-            <Card className="feature d-flex flex-column h-100">
-              <div className="feature-icon bg-primary bg-gradient">
-                <svg
-                  className="bi"
-                  width="1em"
-                  height="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                >
-                  <use xlinkHref="#collection" />
-                </svg>
-              </div>
-              <Card.Body className="flex-grow-1">
-                <Card.Title  style={{borderBottom:"solid 3px",padding:"2px"}}>
-                  Book Store 
-                </Card.Title>
-                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
-                Developed a dynamic Book Store website using jQuery, CSS, HTML, and JavaScript. Users can browse, search, and purchase books seamlessly. Enhanced user experience with interactive features and a clean, responsive design.
-                </Card.Text>
-                <a href="https://k-book.netlify.app/" target="_blank" className="icon-link">
-                  Demo
-                  <svg
-                    className="bi"
-                    width="1em"
-                    height="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                  >
-                    <use xlinkHref="#chevron-right" />
-                  </svg>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
 
-          <Col>
-            <Card className="feature d-flex flex-column h-100">
-              <div className="feature-icon bg-primary bg-gradient">
-                <svg
-                  className="bi"
-                  width="1em"
-                  height="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                >
-                  <use xlinkHref="#collection" />
-                </svg>
-              </div>
-              <Card.Body className="flex-grow-1">
-                <Card.Title  style={{borderBottom:"solid 3px",padding:"2px"}}>
-                  Elevate Your Skills in Digital Marketing
-                </Card.Title>
-                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
-                  Embark on a transformative journey in Marketing and Business
-                  with our dynamic courses designed to enhance your digital
-                  marketing skills and strategic thinking.
-                </Card.Text>
-                <a href="#" className="icon-link">
-                  Explore Courses
-                  <svg
-                    className="bi"
-                    width="1em"
-                    height="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                  >
-                    <use xlinkHref="#chevron-right" />
-                  </svg>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
 
-          <Col>
-            <Card className="feature d-flex flex-column h-100">
-              <div className="feature-icon bg-primary bg-gradient">
-                <svg
-                  className="bi"
-                  width="1em"
-                  height="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                >
-                  <use xlinkHref="#collection" />
-                </svg>
-              </div>
-              <Card.Body className="flex-grow-1">
-                <Card.Title style={{borderBottom:"solid 3px",padding:"2px"}}>
-                  Elevate Your Skills in Digital Marketing
-                </Card.Title>
-                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
-                  Embark on a transformative journey in Marketing and Business
-                  with our dynamic courses designed to enhance your digital
-                  marketing skills and strategic thinking.
-                </Card.Text>
-                <a href="#" className="icon-link">
-                  Explore Courses
-                  <svg
-                    className="bi"
-                    width="1em"
-                    height="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                  >
-                    <use xlinkHref="#chevron-right" />
-                  </svg>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
 
-           <Col>
-            <Card className="feature d-flex flex-column h-100">
-              <div className="feature-icon bg-primary bg-gradient">
-                <svg
-                  className="bi"
-                  width="1em"
-                  height="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                >
-                  <use xlinkHref="#collection" />
-                </svg>
-              </div>
-              <Card.Body className="flex-grow-1">
-                <Card.Title  style={{borderBottom:"solid 3px",padding:"2px"}} >
-                  Elevate Your Skills in Digital Marketing
-                </Card.Title>
-                <Card.Text style={{ textAlign:"justify",textJustify:"inter-word",padding:"2px"}}>
-                  Embark on a transformative journey in Marketing and Business
-                  with our dynamic courses designed to enhance your digital
-                  marketing skills and strategic thinking.
-                </Card.Text>
-                <a href="#" className="icon-link">
-                  Explore Courses
-                  <svg
-                    className="bi"
-                    width="1em"
-                    height="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                  >
-                    <use xlinkHref="#chevron-right" />
-                  </svg>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-
-  
-        </Row>
-      </Container>
-
-      <Container className="px-4 py-5 border-bottom" style={{ textAlign: "left" }}>
+      {/* Education */}
+      <Container
+        className="px-4 py-5 border-bottom"
+        style={{ textAlign: "left" }}
+      >
         <h2 className="pb-2 border-bottom">Educatuin</h2>
 
         <Row className="row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
@@ -324,7 +171,6 @@ function Skills() {
       </Container>
 
       <Container className="px-4 py-5 border-bottom" id="featured-3">
-
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Accordion Item #1</Accordion.Header>

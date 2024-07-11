@@ -8,11 +8,13 @@ import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import { Contact } from "./components/contactUs";
 import Banner from "./components/Banner";
+import Projects from "./components/Projects/Projects";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <NavBar />
     <Banner />
+    <Projects/>
     <Skills />
     <Contact />
     <App />
