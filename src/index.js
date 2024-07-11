@@ -4,16 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import Skills from "./components/Skills";
-
+import { Contact } from "./components/contactUs";
+import Banner from "./components/Banner";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <NavBar />
-<Skills/>
+    <Banner />
+    <Skills />
+    <Contact />
     <App />
-    <Footer/>
+    <Footer />
   </React.StrictMode>
 );
 

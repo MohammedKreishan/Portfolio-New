@@ -2,10 +2,20 @@
 .bg-body-tertiary {
     height: 50px;
     background-color:black; 
+    justify-content: center;
 
 }
 
 .Container-prop{
-    background-color: rgb(127, 138, 255);
+    display: flex;
+
 
 }
+
+.me-auto {
+    background-color: rgb(179, 0, 255);
+    display:flex;
+    flex:none;
+    justify-content: space-evenly;
+}
+

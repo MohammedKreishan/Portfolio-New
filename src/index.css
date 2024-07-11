@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body.dark-mode {
+  background-color:rgba(13,36,56,255);
+  color: #ffffff;
+}
+
+/* Example styles to demonstrate dark mode on other elements */
+.dark-mode .navbar {
+  background-color: #333 !important;
+}
+
+.dark-mode .navbar-brand, .dark-mode .nav-link {
+  color: #ffffff !important;
+}
+
+.dark-mode .nav-link:hover, .dark-mode .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75) !important;
+}

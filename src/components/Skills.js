@@ -54,6 +54,7 @@ function Skills() {
           </Carousel.Item>
         </Carousel>
       </Container>
+      
       <Container className="px-4 py-5" id="featured-3">
         <h2 className="pb-2 border-bottom" style={{ textAlign: "center", fontFamily:"cursive" }}>
           Projects
