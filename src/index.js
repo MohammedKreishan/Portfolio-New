@@ -1,25 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import Skills from "./components/Skills";
-import { Contact } from "./components/contactUs";
-import Banner from "./components/Banner";
-import Projects from "./components/Projects/Projects";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <NavBar />
-    <Banner />
-    <Projects/>
-    <Skills />
-    <Contact />
+  <BrowserRouter>
     <App />
-    <Footer />
-  </React.StrictMode>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
