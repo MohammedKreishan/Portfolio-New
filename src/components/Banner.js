@@ -9,7 +9,7 @@ import Image from "react-bootstrap/Image";
 
 const Banner = () => {
   return (
-    <Container className="px-5 py-5" id="featured-3" style={{backgroundColor:"red"}}>
+    <Container className="px-5 py-5" id="featured-3" style={{}}>
       <h2
         className="pb-2 border-bottom"
         style={{ textAlign: "center", fontFamily: "cursive" }}
@@ -21,10 +21,10 @@ const Banner = () => {
           <Card className="feature d-flex flex-column h-100 justify-content-end">
             <Card.Body className="d-flex flex-column align-items-center">
               <Image
-                src="https://res.cloudinary.com/dalwd5c23/image/upload/v1705177932/samples/cup-on-a-table.jpg"
+                src="https://res.cloudinary.com/dalwd5c23/image/upload/v1720747765/ojwfdmh7sbli6g0zjcfi.jpg"
                 roundedCircle
                 style={{
-                  height:"60%",
+                  height:"50%",
                   width:"70%"
                 }}
               />
