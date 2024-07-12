@@ -2,11 +2,13 @@ import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import React, { useState, createContext } from "react";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Skills from "./components/Skills";
 import AboutUs from "./components/AboutUs/aboutUs";
 import Home from "./components/Home/home";
 import Projects from "./components/Projects/Projects";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export const userContext = createContext();
 
