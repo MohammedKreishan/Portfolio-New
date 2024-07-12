@@ -16,7 +16,7 @@ function Projects() {
     // First Project
     {
       title: "Hangman Game",
-
+      text: "Game\nSimple Front-end Project",
       image: {
         src: "https://media.licdn.com/dms/image/D4E2DAQHZMK_k0RrsrQ/profile-treasury-image-shrink_800_800/0/1719582247695?e=1721354400&v=beta&t=R8A0RzciUrlJg7H10WY3yBsjnx5vC_YtpDgXgnLiJZw",
         alt: "Digital Marketing Course Image",
@@ -28,6 +28,7 @@ function Projects() {
 
     {
       title: "K-book",
+      text: "Book Store\nSimple Front-end Project",
 
       image: {
         src: "https://media.licdn.com/dms/image/D4E2DAQEltY9kWjlTYQ/profile-treasury-image-shrink_800_800/0/1719582576021?e=1721354400&v=beta&t=yRD3hMkXXxNHdTGcpn5H-6o5U55I06IkUDuroWCG_Ss",
@@ -41,7 +42,7 @@ function Projects() {
 
     {
       title: "K-E-Learning",
-      text: "Elearning Platform",
+      text: "Elearning Platform \n Full-Stack Project ",
       image: {
         src: "https://media.licdn.com/dms/image/D4E2DAQEtd_w3on2vfQ/profile-treasury-image-shrink_800_800/0/1719924042489?e=1721350800&v=beta&t=PkZGPr-uWBobTKn5Si3Te8liuYG3G-oBCS6z65B9TBk",
         alt: "Digital Marketing Course Image",
@@ -53,6 +54,7 @@ function Projects() {
 
     {
       title: "TALAQI",
+      text: "Social Media Platform \n Full-Stack Project ",
 
       image: {
         src: "https://media.licdn.com/dms/image/D4E2DAQF-LneAB16aUA/profile-treasury-image-shrink_800_800/0/1719582762285?e=1721354400&v=beta&t=lBZkNbOquvqx2Ie-n0k_0Z2xx-FftcY7ApHYwBJ_JPI",
@@ -80,25 +82,29 @@ function Projects() {
                   inView ? "zoom-in" : ""
                 }`}
               >
-                  <Card.Title style={{ padding: "6px", textAlign: "center",borderBottom:"solid" }}>
-                    {project.title}
-                  </Card.Title>
+                <Card.Title
+                  style={{
+                    padding: "6px",
+                    textAlign: "center",
+                    borderBottom: "solid",
+                  }}
+                >
+                  {project.title}
+                </Card.Title>
                 <Card.Body className="flex-grow-1">
-                  
-                {project.image && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Card.Img
-                      variant="top"
-                      src={project.image.src}
-                      alt={project.image.alt}
-                    />
-                  </a>
-                )}
-
+                  {project.image && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Card.Img
+                        variant="top"
+                        src={project.image.src}
+                        alt={project.image.alt}
+                      />
+                    </a>
+                  )}
 
                   <Card.Text
                     style={{
@@ -106,14 +112,13 @@ function Projects() {
                       textJustify: "inter-word",
                       padding: "4px",
                       textAlign: "center",
-                      fontSize:"24px bold",
-                      fontFamily:"timesNewRoman"
+                      fontSize: "20px",
+                      fontFamily: "timesNewRoman",
+                      whiteSpace: "pre-line",
                     }}
                   >
                     {project.text}
                   </Card.Text>
-
-      
                 </Card.Body>
               </Card>
             </Col>
