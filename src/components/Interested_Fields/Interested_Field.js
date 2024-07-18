@@ -14,11 +14,11 @@ function Intersted_Fields() {
   const educationData = [
     {
       title: "Web Development",
-      url:"/WebDevelopment",
+      url: "/WebDevelopment",
       text: "Bcs Degree in Electrical Engineering. I studied various aspects of electrical systems, circuits, and power distribution.",
       institution: "Al-Hussein Bin Talal University",
       image: {
-        src: "https://www.ahu.edu.jo/images/AHUlogo.png",
+        src: "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_640.png",
         alt: "AHU Logo",
       },
       link: "https://www.ahu.edu.jo/HomeEn.aspx",
@@ -26,6 +26,8 @@ function Intersted_Fields() {
     },
     {
       title: "Digital Markiting",
+      url: "/WebDevelopment",
+
       text: "Master Degree in Power and Control Engineering. Focused on advanced power systems, control theory, and renewable energy technologies.",
       institution: "Jordan University of Science and Technology",
       image: {
@@ -36,12 +38,14 @@ function Intersted_Fields() {
       linkText: "Go to website",
     },
     {
-      title: "Cypher Security",
+      title: "Cyber Security",
+      url: "/Cyber_Security",
+
       text: "Full-Stack Project for an Elearning Platform. Developed a comprehensive online learning platform using modern web technologies.",
-      institution: "Elearning Platform",
+      institution: "Cyber Security",
       image: {
-        src: "https://media.licdn.com/dms/image/D4E2DAQEtd_w3on2vfQ/profile-treasury-image-shrink_800_800/0/1719924042489?e=1721350800&v=beta&t=PkZGPr-uWBobTKn5Si3Te8liuYG3G-oBCS6z65B9TBk",
-        alt: "K-E-Learning Image",
+        src: "https://www.shutterstock.com/image-photo/cybersecurity-concept-user-privacy-security-600nw-2137304159.jpg",
+        alt: "Cyber Security Image",
       },
       link: "https://e-k-learning.netlify.app/",
       linkText: "Go to website",

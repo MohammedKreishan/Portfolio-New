@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs/aboutUs";
 import Home from "./components/Home/home";
 import Projects from "./components/Projects/Projects";
 import WebDevelopment from "./components/Web_DeveLopment/Web_Development"
+import Cyber_Security from "./components/Cyber_Security/Cyber_Security"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,8 +23,9 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />Cypher_Security
           <Route path="/WebDevelopment" element={<WebDevelopment />} />
+          <Route path="/Cyber_Security" element={<Cyber_Security />} />
 
           <Route path="/" element={<Projects/>} />
           <Route path="/aboutUs" element={<AboutUs />} />

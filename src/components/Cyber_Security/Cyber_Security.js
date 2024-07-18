@@ -5,8 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useInView } from "react-intersection-observer";
 import Image from "react-bootstrap/Image";
-import Projects from "../Projects/Projects"
-function WebDevelopment() {
+import Projects from "../Projects/Projects";
+function Cypher_Security() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -14,14 +14,14 @@ function WebDevelopment() {
 
   const educationData = [
     {
-      title: "The Complete 2024 Web Development Bootcamp",
-      text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps.",
-      institution: " Web Development Bootcamp",
+      title: "Learn Python & Ethical Hacking From Scratch",
+      text: "Write 20+ hacking programs to learn hacking and programming at the same time | No prior knowledge required",
+      institution: "Learn Python & Ethical Hacking",
       image: {
-        src: "https://img-c.udemycdn.com/course/750x422/1565838_e54e_18.jpg",
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVp1FVZudzb16GQZXFnN7v28uN0uwAZYH7NQ&s",
         alt: "AHU Logo",
       },
-      link: "https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=KEEPLEARNING",
+      link: "https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=a1LgFw09t88&ranMID=47907&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-hocbndVbznkJHlMDzsue2g&couponCode=KEEPLEARNING",
       linkText: "Go to website",
     },
     {
@@ -44,14 +44,14 @@ function WebDevelopment() {
           className="pb-2 border-bottom"
           style={{ textAlign: "center", fontFamily: "cursive" }}
         >
-          Web Development
+          Cyber Security{" "}
         </h2>
         <Row className="g-4 py-5 row-cols-1 row-cols-lg-2">
           <Col lg={4} className="d-flex align-items-end">
             <Card className="feature d-flex flex-column h-100 justify-content-end">
               <Card.Body className="d-flex flex-column align-items-center">
                 <Image
-                  src="https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_640.png"
+                  src="https://img.freepik.com/free-photo/3d-internet-secuirty-badge_1048-18106.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1721174400&semt=ais_user"
                   roundedCircle
                   style={{ height: "50%", width: "70%" }}
                 />
@@ -63,7 +63,7 @@ function WebDevelopment() {
                     textAlign: "center",
                   }}
                 >
-                  Web Development
+                  Cyber Security{" "}
                 </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   A Full-Stack Developer
@@ -75,48 +75,50 @@ function WebDevelopment() {
           <Col lg={8}>
             <Card className="feature d-flex flex-column h-100">
               <Card.Body>
-                <h3>My Journey in Web Development</h3>
+                <h3>My Journey in Cyber Security</h3>
                 <p>
-                  My journey in web development began with a strong interest in
-                  creating dynamic and interactive web applications. I
-                  transitioned from electrical engineering to web development,
-                  driven by a passion for coding and building innovative digital
-                  solutions. Through a rigorous 5-month Bootcamp and various
-                  personal and professional projects, I have developed a robust
-                  skill set in full-stack web development.
+                  My journey into Cyber Security began with a deep interest in
+                  understanding and protecting digital systems. Transitioning
+                  from electrical engineering, I developed a strong passion for
+                  ethical hacking and cybersecurity. Through hands-on projects
+                  and practical experience, I have built a solid foundation in
+                  this field.
                 </p>
 
                 <h3>Skills & Technologies</h3>
                 <ul>
+                  <li>Programming: Python</li>
                   <li>
-                    Front-End: React, Redux, Bootstrap, CSS, HTML, JavaScript
+                    Ethical Hacking: Penetration Testing, Vulnerability
+                    Assessment
                   </li>
-                  <li>Back-End: Node.js, Express, MongoDB</li>
-                  <li>Other Tools: Git, Netlify, Cloudinary</li>
+                  <li>Social Engineering: Techniques and Countermeasures</li>
+                  <li>Tools: Kali Linux, Metasploit, Nmap, Wireshark</li>
                 </ul>
 
                 <h3>Career Goals</h3>
                 <p>
-                  In the field of web development, I aim to leverage my skills
-                  to build robust and scalable web applications. I am
-                  particularly interested in roles that allow me to continue
-                  learning and growing as a developer while contributing to
-                  impactful projects that improve user experiences and drive
-                  business success.
+                  In the field of Cyber Security, I aim to leverage my skills to
+                  protect and secure digital infrastructures. I am particularly
+                  interested in roles that allow me to continue learning and
+                  growing as a cybersecurity professional while contributing to
+                  impactful projects that safeguard sensitive information and
+                  systems.
                 </p>
 
                 <h3>Notable Achievements</h3>
                 <ul>
                   <li>
-                    Successfully deployed multiple web development projects on
-                    Netlify
+                    Successfully applied ethical hacking techniques to secure
+                    web applications
                   </li>
                   <li>
-                    Completed a comprehensive full-stack development Bootcamp
+                    Conducted vulnerability assessments to identify and mitigate
+                    potential threats
                   </li>
                   <li>
-                    Designed and developed a portfolio of web applications using
-                    modern technologies
+                    Developed a portfolio of cybersecurity projects showcasing
+                    practical skills
                   </li>
                 </ul>
               </Card.Body>
@@ -124,8 +126,6 @@ function WebDevelopment() {
           </Col>
         </Row>
       </Container>
-
-
 
       {/*Courses */}
       <Container className="px-4 py-5 border-bottom" id="education-section">
@@ -193,10 +193,8 @@ function WebDevelopment() {
           ))}
         </Row>
       </Container>
-
-      <Projects/>
     </div>
   );
 }
 
-export default WebDevelopment;
+export default Cypher_Security;
