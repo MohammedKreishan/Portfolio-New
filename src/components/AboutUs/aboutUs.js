@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Image } from "react-bootstrap";
 
 const AboutUs = () => {
   return (
@@ -17,6 +17,88 @@ const AboutUs = () => {
           </p>
         </Container>
       </div>
+
+
+
+    <Container className="px-5 py-5" id="about-me">
+      <h2
+        className="pb-2 border-bottom"
+        style={{ textAlign: "center", fontFamily: "cursive" }}
+      >
+        About Me
+      </h2>
+      <Row className="g-4 py-5 row-cols-1 row-cols-lg-2">
+        <Col lg={4} className="d-flex align-items-end">
+          <Card className="feature d-flex flex-column h-100 justify-content-end">
+            <Card.Body className="d-flex flex-column align-items-center">
+              <Image
+                src="https://res.cloudinary.com/dalwd5c23/image/upload/v1720747765/ojwfdmh7sbli6g0zjcfi.jpg"
+                roundedCircle
+                style={{ height: "50%", width: "70%" }}
+              />
+              <Card.Title
+                style={{
+                  borderBottom: "solid 3px",
+                  padding: "20px",
+                  marginTop: "20px",
+                  textAlign: "center",
+                }}
+              >
+                HI, I AM Mohammad Kreishan
+              </Card.Title>
+              <Card.Text style={{ textAlign: "center" }}>
+                A Full-Stack Developer & Design Enthusiast with a background in electrical engineering. I have completed a 5-month Bootcamp and possess experience in MongoDB, React, Bootstrap, Redux, CSS, HTML, JavaScript, Node.js, and Express.
+              </Card.Text>
+              <a
+                href="https://k-book.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon-link"
+              >
+                Download My Resume
+                <svg
+                  className="bi"
+                  width="1em"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <use xlinkHref="#chevron-right" />
+                </svg>
+              </a>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col lg={8}>
+          <Card className="feature d-flex flex-column h-100">
+            <Card.Body>
+              <h3>My Journey</h3>
+              <p>
+                I started my career as an electrical engineer, but my passion for coding led me to transition into full-stack development. Over the past few years, I have honed my skills through a rigorous 5-month Bootcamp and various personal and professional projects.
+              </p>
+              <h3>Skills & Technologies</h3>
+              <ul>
+                <li>Front-End: React, Redux, Bootstrap, CSS, HTML, JavaScript</li>
+                <li>Back-End: Node.js, Express, MongoDB</li>
+                <li>Other Tools: Git, Netlify, Cloudinary</li>
+              </ul>
+              <h3>Career Goals</h3>
+              <p>
+                I aim to leverage my full-stack development skills to build robust and scalable web applications. I am particularly interested in roles that allow me to continue learning and growing as a developer, while also contributing to impactful projects.
+              </p>
+              <h3>Notable Achievements</h3>
+              <ul>
+                <li>Successfully deployed multiple projects on Netlify</li>
+                <li>Completed a comprehensive full-stack development Bootcamp</li>
+                <li>Designed and developed a portfolio of web applications using modern technologies</li>
+              </ul>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+
       <Container className="px-4 py-5" id="featured-3">
         <h2 className="pb-2 border-bottom" style={{ textAlign: "left" }}>Discover Our Featured Courses</h2>
         <Row className="g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -79,6 +161,7 @@ const AboutUs = () => {
           </Col>
         </Row>
       </Container>
+
       <Container className="px-4 py-5" style={{ textAlign: "left" }}>
         <h2 className="pb-2 border-bottom">Unleash Your Learning Experience</h2>
         <Row className="row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
