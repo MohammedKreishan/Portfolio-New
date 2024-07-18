@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import AboutUs from "./components/AboutUs/aboutUs";
 import Home from "./components/Home/home";
 import Projects from "./components/Projects/Projects";
+import WebDevelopment from "./components/Web_DeveLopment/Web_Development"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,6 +23,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/WebDevelopment" element={<WebDevelopment />} />
+
           <Route path="/" element={<Projects/>} />
           <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>

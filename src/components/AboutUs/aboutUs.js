@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Button, Image } from "react-bootstrap";
+import Education from "../Education/Education";
+import Courses from "../Courses/Courses";
 
 const AboutUs = () => {
   return (
@@ -18,8 +20,8 @@ const AboutUs = () => {
         </Container>
       </div>
 
-
-
+<Education/>
+<Courses/>
     <Container className="px-5 py-5" id="about-me">
       <h2
         className="pb-2 border-bottom"
